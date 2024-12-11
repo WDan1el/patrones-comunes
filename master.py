@@ -1,11 +1,9 @@
-n = int(input("Introduce el valor de n (cantidad de números a ingresar): "))
+n = int(input("Introduce un número entero n (n ≥ 0) para calcular su factorial: "))
 
-mayor = None
+factorial = 1
+for i in range(1, n + 1):
+    factorial *= i
 
-for i in range(n):
-    num = int(input(f"Introduce el número {i + 1}: "))
-    
-    if mayor is None or num > mayor:
-        mayor = num
+print(f"El factorial de {n} es: {factorial}")
 
-print(f"El número mayor es: {mayor}")
+#como puedo utilizar el for mejor casi no lo ce utilizar#
